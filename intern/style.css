@@ -1,0 +1,350 @@
+:root{
+    --main-color:#d90429;
+    --text-color: #FFFFFF;
+    --bg-color:#fff;
+}
+img{
+    width:100%;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'trebuchet MS','lucida Sans Unicode','Lucida Grande','Lucida Sans','Arial','sans-seriff';
+    box-sizing:border-box;
+    
+}
+.container{
+    max-width: 1068px;
+    margin-left:left;
+    margin-right: left;
+
+}
+header{
+    display:block;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+#menu-icon{
+font-size: 24px;
+cursor: pointer;
+color: var(--text-color);
+display: none;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.logo span{
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    column-gap: 2rem;
+}
+.navbar a{
+    color:var(--text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover,.navbar .active{
+color:var(--main-color);
+border-bottom: 3px solid var(--main-color);
+}
+#search-icon{
+    font-size: 24px;
+    cursor:pointer;
+    
+}
+.search-box{
+    top:110%;
+    right: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55/10%);
+    border:1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+}
+.search-box input{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+font-size: 1rem;
+}
+
+
+html,body{
+    width:  100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image:  url("https://wallpaperaccess.com/full/229227.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+position: relative;
+width: 100%;
+min-height: inherit;
+background-color: rgba(0, 0, 0, 0.100)
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.rtext{
+    display:flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+font-size: 12px;
+}
+.bottom{
+    display: flex;
+    width:100%;
+    min-height: 40vj;
+}
+.b1{
+width: 30%;
+min-height: inherit;
+background-image: url("https://media.istockphoto.com/id/1324402324/photo/tunnel-in-egnatia-highway-greece-lights-speed-blur-transportations-background-cars.jpg?s=612x612&w=is&k=20&c=8okqk3uVHJeBIy6z8bpGrQvDJMwY1zAYYdE6byodVIQ=");
+background-size: cover;
+background-position: center;
+}
+.b1 h1{
+    text-align: center
+    padding: 30px;
+}
+.btn{
+    padding: 10px 22px;
+    background:var(--main-color);
+    color:var(--bg-color);
+    font-weight: 400;
+}
+.btn:hover{
+    background: #fd052f;
+}
+.heading{
+    text-align: center;
+    background-color: aqua;
+}
+.heading span{
+     font-weight:500;
+     color:var(--main-color);
+}
+.cars-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 2rem;
+}
+.cars-container .box{
+    flex:1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.cars-container .box img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.cars-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;;
+}
+.cars-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background:var(--bg-color);
+    padding: 8px;
+    border-radius: 0.5rem;
+
+}
+.cars-container .box:hover h2{
+    background: var(--main-color);
+    color:var(--bg-color);
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img{
+    flex: 1 1 16rem;
+}
+.about-text{
+    flex:1 1 21rem;
+    
+}
+.about-text span{
+    font-weight: 500;
+    color:var(--main-color);
+}
+.about-text h2{
+    font-size: 1.7rem;
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+}
+
+
+.b1 p{
+    color:brown;
+text-align: center;
+padding: 15px;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;  
+    background-image: url("https://images.pexels.com/photos/6252320/pexels-photo-6252320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+    background-size: cover;
+    background-position: center;
+
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;  
+    background-image: url("https://images.pexels.com/photos/12086414/pexels-photo-12086414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");  
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;  
+    background-color: rgba(255, 255, 255, 0.345);
+}
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url("https://images.pexels.com/photos/726326/pexels-photo-726326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+    font-size: 1.5rem;
+    color:black
+}
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width:100%;
+        margin-left: initial;
+    }
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text .h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 50px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin: 10px;
+    }
+    .icon{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+
+    }
+
+}
